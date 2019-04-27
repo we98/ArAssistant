@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!--
+    0dp代表MATCH_CONSTRAINT
+    MATCH_CONSTRAINT会将控件的宽度或高度拉到constraint最大范围处，但并不是相当于MATCH_PARENT
+    app:layout_constraintVertical_bias调节左右、上下限制距离百分比
+    app:layout_constraintWidth_percent通过父布局调节自身宽高，但要注意将android:layout_width不要设置为match_parent或wrap_parent，要设置为match_constraint
+    -->
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:text="AR说明书"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/textview_bg_activity_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <EditText
+        android:id="@+id/accountEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Account"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_text"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountEditText"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@drawable/textview_bg_activity_login"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintStart_toStartOf="@id/passwordEditText"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/textview_bg_activity_login"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintEnd_toEndOf="@id/passwordEditText"/>
+
+
+</android.support.constraint.ConstraintLayout>

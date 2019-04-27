@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- 第五行创建项目的时候是没有Base.因为无法预览，所以加了 -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="window_in_activity_main_pop_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/window_pop_in_animation</item>
+        <item name="android:windowExitAnimation">@anim/window_pop_out_animation</item>
+    </style>
+
+
+
+</resources>
