@@ -19,7 +19,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".SelectProblemActivity" />
         <activity android:name=".UsualProblemActivity" />
-        <activity android:name=".OperationListActivity"></activity>
+        <activity android:name=".OperationListActivity"/>
     </application>
 
 </manifest>
